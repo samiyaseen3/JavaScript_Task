@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .error{
+            color: red;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+    <form onsubmit="return validateForm();">
+        <span class="error"></span>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" >
+        
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" >
+        <span class="error"></span>
+      
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" >
+        <span class="error"></span>
+      
+        <button type="submit">Register</button>
+      </form>
+    <script src="Task.js"></script>
+</body>
+</html>
